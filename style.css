@@ -1,3 +1,36 @@
-main{
-    
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+.play-button {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: rgb(194, 194, 194);
+    border: solid 1px black;
+}
+
+.main h1 {
+    text-align: center;
+    padding-top: 360px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: rgb(194, 194, 194);
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 400;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./prison.png');
 }
