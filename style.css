@@ -19,7 +19,6 @@ body {
 
 .main h1 {
     text-align: center;
-    padding-top: 360px;
     margin-bottom: 1rem;
     font-size: 3rem;
     color: rgb(194, 194, 194);
@@ -33,4 +32,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('./prison.png');
+    padding-top: 12rem;
+}
+
+.prisoner {
+    width: 20rem;
+    height: 30rem;
+}
+
+#second-page {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.second-page-buttons {
+    width: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
