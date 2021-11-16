@@ -2,6 +2,7 @@ window.onload = main;
 
 let answer;
 
+/** Start of the program */
 function main() {
   addEventListener();
 }
@@ -19,9 +20,10 @@ function startGame() {
   } else {
     startGame.style.display = 'none'
   }
-  prepareStory()
+  prepareStory();
 }
 
+/** Input name in prompt */
 function prepareStory(){
   const answer = prompt('Skriv in ditt namn');
   alert('Hej ' + answer + '! Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du vill ta dig ut ur fängelset.');
@@ -29,7 +31,7 @@ function prepareStory(){
 }
 
 function chooseWayOut(){
-  const firstChoice = document.getElementsById('second-page');
+  const firstChoice = document.getElementById('second-page');
 
   if (firstChoice.style.display === 'none') {
 
@@ -37,6 +39,13 @@ function chooseWayOut(){
     firstChoice.style.display = 'block'
   }
 }
+
+function digYourWayOut(){
+  const digYourWayOut = document.getElementsById('riot-story');
+  console.log();
+}
+
+
 
 
 
