@@ -8,18 +8,8 @@ body {
     max-height: 100vh;
 }
 
-#start-button {
-    display: block;
-    margin: 0 auto;
-    width: 15rem;
-    height: 4rem;
-    font-size: 2rem;
-    font-weight: 400;
-    border-radius: 5px;
-    background-color: rgb(241, 241, 241);
-    border: solid 1px black;
-}
 
+/* Content first and second page */
 .main h1 {
     text-align: center;
     margin-bottom: 3rem;
@@ -35,13 +25,6 @@ body {
     background-size: cover;
     background-image: url('./images/prison.png');
     padding-top: 10rem;
-}
-
-#prisoner {
-    width: 15rem;
-    height: 20rem;
-    margin: 0 auto;
-    display: block;
 }
 
 #second-page {
@@ -63,6 +46,19 @@ body {
     font-size: 2rem;
 }
 
+/* Buttons */
+#start-button {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    border: solid 1px black;
+}
+
 .second-page-buttons {
     align-items: center;
     justify-content: center;
@@ -80,13 +76,15 @@ body {
     border-radius: 5px;
 }
 
-#third-page{
-    color: white;
-    display: none;
-    margin: 0 auto;
-}
-
+/* Images */
 #spoon{
     width: 7rem;
     height: 15rem;
+}
+
+#prisoner {
+    width: 15rem;
+    height: 20rem;
+    margin: 0 auto;
+    display: block;
 }
