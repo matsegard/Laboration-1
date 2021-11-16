@@ -1,8 +1,8 @@
+
+// LADDAR IN MAIN FUNKTION
 window.onload = main;
 
-let answer;
-
-/** Start of the program */
+// main funktionern lägger in listerner
 function main() {
   addEventListener();
 }
@@ -10,10 +10,8 @@ function main() {
 function addEventListener() {
   const startButton = document.getElementById('start-button');
   startButton.onclick = startGame;
-
-  
-  const digYourWayOut = document.getElementById('dig-story');
-  digYourWayOut.onclick = digYourWayOutStory;
+  const digButton = document.getElementById('dig-story')
+  digButton.onclick = testFunction;
 }
 
 function startGame() {
@@ -28,13 +26,11 @@ function startGame() {
 }
 
 /** Input name in prompt */
-function prepareStory() {
-  // const answer = prompt('Skriv in ditt namn');
-  // alert('Hej ' + answer + '! Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du vill ta dig ut ur fängelset.');
+function prepareStory(){
   chooseWayOut();
 }
 
-function chooseWayOut() {
+function chooseWayOut(){
   const firstChoice = document.getElementById('second-page');
 
   if (firstChoice.style.display === 'none') {
@@ -42,12 +38,9 @@ function chooseWayOut() {
   } else {
     firstChoice.style.display = 'block'
   }
-  digYourWayOutStory();
 }
 
-function digYourWayOutStory() {
-  let secondPage = document.getElementById('second-page')
-  let digYourWayOut = document.getElementById('third-page');
-  secondPage.style.display = "none"
-  digYourWayOut.style.display = "block"
+function testFunction(){
+  document.getElementById('second-page').style.display = "none"
+  document.getElementById('third-page').style.display = "block"
 }
