@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -22,18 +22,14 @@
             <h1>Välkommen till Prison Escape</br>Bryt dig ut ur fängelset</h1>
             <button id="start-button">Start</button>
         </div>
-        <div id="second-page" class="hidden">
-            <h2 id="text">Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du vill ta dig ut ur fängelset.</h2>
-            <img id="prisoner" src="prisoner.png" alt="prisoner">
+        <div id="second-page">
+            <h2 id="headerText">Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du vill ta dig ut ur fängelset.</h2>
+            <img id="prisoner" src="./images/prisoner.png" alt="prisoner">
             <div class="second-page-buttons">
-            <button id="riot-story">Starta ett upplopp</button>
-            <button id="dig-story">Gräv dig ut ur cellen</button>
+            <button onclick="imgtextChange(this)" id="riot-story">Starta ett upplopp</button>
+            <button onclick="imgtextChange(this)" id="dig-story">Gräv dig ut ur cellen</button>
         </div>
-        </div>
-        <div id="third-page">
-            <h2>Klicka på skeden för att börja gräva dig ut ur cellen.</h2> 
-            <img id="spoon" src="spoon.png" alt="spoon"> 
-        </div>
+    </div>
     </main>
 
 </body>
