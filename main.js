@@ -1,4 +1,3 @@
-
 // LADDAR IN MAIN FUNKTION
 window.onload = main;
 
@@ -9,12 +8,13 @@ function main() {
 
 function addEventListener() {
   const startButton = document.getElementById('start-button');
-  startButton.onclick = startGame;
+  startButton.onclick = start;
+
   const digButton = document.getElementById('dig-story')
-  digButton.onclick = testFunction;
+  digButton.onclick = digYourWayOut;
 }
 
-function startGame() {
+function start() {
   const startGame = document.getElementById('first-page');
 
   if (startGame.style.display === 'block') {
@@ -22,15 +22,10 @@ function startGame() {
   } else {
     startGame.style.display = 'none'
   }
-  prepareStory();
-}
-
-/** Input name in prompt */
-function prepareStory(){
   chooseWayOut();
 }
 
-function chooseWayOut(){
+function chooseWayOut() {
   const firstChoice = document.getElementById('second-page');
 
   if (firstChoice.style.display === 'none') {
@@ -38,9 +33,18 @@ function chooseWayOut(){
   } else {
     firstChoice.style.display = 'block'
   }
+  digYourWayOut();
 }
 
-function testFunction(){
-  document.getElementById('second-page').style.display = "none"
-  document.getElementById('third-page').style.display = "block"
+function digYourWayOut() {
+
+  const digging = document.getElementById('third-page');
+
+  if (digging.style.display === 'none') {
+
+  } else {
+    digging.style.display = 'block'
+  }
+  console.log('test');
 }
+

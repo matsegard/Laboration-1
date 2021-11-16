@@ -22,9 +22,9 @@ body {
 
 .main h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 3rem;
-    color: rgb(194, 194, 194);
+    color: rgb(241, 241, 241);
     font-weight: 400;
 }
 
@@ -34,13 +34,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('./prison.png');
-    padding-top: 12rem;
+    padding-top: 10rem;
 }
 
 #prisoner {
     width: 15rem;
     height: 20rem;
     margin: 0 auto;
+    display: block;
 }
 
 #second-page {
@@ -80,8 +81,8 @@ body {
 }
 
 #third-page{
-    display: none;
     color: white;
+    display: none;
     margin: 0 auto;
 }
 
