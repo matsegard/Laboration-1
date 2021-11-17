@@ -23,11 +23,13 @@
             <button id="start-button">Start</button>
         </div>
         <div id="second-page">
-            <h2 id="headerText">Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du vill ta dig ut ur fängelset.</h2>
+            <h2 id="headerText">Här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du ska rymma.
+            </h2>
+            <button onclick="alertFunction(this)" id="action-click" class="action-click">Default</button>
             <img id="prisoner" src="./images/prisoner.png" alt="prisoner">
             <div class="second-page-buttons">
-            <button onclick="imgtextChange(this)" id="riot-story">Starta ett upplopp</button>
-            <button onclick="imgtextChange(this)" id="dig-story">Gräv dig ut ur cellen</button>
+            <button onclick="imgTextChange(this)" id="riot-story">Starta ett upplopp</button>
+            <button onclick="imgTextChange(this)" id="dig-story">Gräv dig ut ur cellen</button>
         </div>
     </div>
     </main>

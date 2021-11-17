@@ -76,6 +76,16 @@ body {
     border-radius: 5px;
 }
 
+.action-click {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: solid black 1px;
+    padding: 0.6rem;
+    border-radius: 5px;
+
+}
+
 /* Images */
 #spoon{
     width: 7rem;
@@ -88,3 +98,4 @@ body {
     margin: 0 auto;
     display: block;
 }
+

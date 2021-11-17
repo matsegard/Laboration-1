@@ -2,7 +2,8 @@
 const buttons = {
   "startbutton": document.getElementById('start-button'),
   "digbutton": document.getElementById('dig-story'),
-  "riotbutton": document.getElementById('riot-story')
+  "riotbutton": document.getElementById('riot-story'),
+  "actionbutton": document.getElementById('action-click')
 }
 /** Pages */
 const pages = {
@@ -10,10 +11,10 @@ const pages = {
   "secondPage": document.getElementById('second-page'),
   "thirdPage": document.getElementById('second-page')
 }
-/**  */
+/** Change heading text and image  */
 const extraChanges = {
   "h2Change": document.getElementById('headerText'),
-  "imgChange": document.getElementById('prisoner')
+  "imgChange": document.getElementById('prisoner'),
 }
 
 window.onload = main;
@@ -54,9 +55,9 @@ function chooseWayOut() {
  */
 function changeText(item){
   if(item.id === "dig-story") {
-    extraChanges.h2Change.innerHTML = "Du stjäl en sked från matsalen och börjar gräva en liten tunnel bakom toaletten i din cell. Du har nu 30 år av grävande framför dig.";
+    extraChanges.h2Change.innerHTML = "Du stjäl en sked ifrån matsalen. När fängelset släcker för natten så börjar du gräva en liten tunnel bakom toaletten i din cell.";
   }else if(item.id === "riot-story") {
-    extraChanges.h2Change.innerHTML = "Du startar ett upplopp i fängelset genom att ta en fångvaktare som gisslan. Gisslandramat leder till ett upplopp och du lyckas klättra över muren under allt tumult.";
+    extraChanges.h2Change.innerHTML = "Du startar ett upplopp i fängelset genom att ta en fångvaktare som gisslan.";
   }
 }
 
@@ -76,11 +77,30 @@ function changeImage(item) {
  * Changes text and image + hide buttons
  * @param {*} item 
  */
-function imgtextChange(item) {
+function imgTextChange(item) {
   changeText(item)
   changeImage(item)
+  buttons.actionbutton.style.display = "block"
+  if(item.id === "dig-story") {
+    buttons.actionbutton.innerHTML = "Börja gräva"
+    buttons.actionbutton.setAttribute('id', 'dig-story-button')
+  }else if(item.id === "riot-story") {
+    buttons.actionbutton.innerHTML = "Ta fångvaktaren som gisslan"
+    buttons.actionbutton.setAttribute('id', 'riot-story-button')
+  }
   buttons.digbutton.style.display = "none"
   buttons.riotbutton.style.display = "none"
 }
 
+/**
+ * Alert end game when clicking button
+ * @param {*} item 
+ */
+function alertFunction(item) {
+  if(item.id === "riot-story-button") {
+    alert('Grattis! Du är äntligen ute i friheten. Under det pågående upploppet lyckades du klättra över muren och rymma.')
+  }else if(item.id === "dig-story-button") {
+    alert('Grattis! Det har nu gått 30 år sedan du började gräva tunneln och du är äntligen ute i friheten.')
+  }
+}
 
