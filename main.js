@@ -100,7 +100,7 @@ function alertFunction(item) {
   if(item.id === "riot-story-button") {
     alert('Grattis! Du är äntligen ute i friheten. Under det pågående upploppet lyckades du klättra över muren och rymma.')
   }else if(item.id === "dig-story-button") {
-    alert('Grattis! Det har nu gått 30 år sedan du började gräva tunneln och du är äntligen ute i friheten.')
+    alert('Grattis! Det har nu gått 30 år sedan du började gräva tunneln och du har äntligen kommit ut på andra sidan.')
   }
 }
 
