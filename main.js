@@ -13,7 +13,7 @@ const pages = {
 }
 /** Change heading text and image  */
 const extraChanges = {
-  "h2Change": document.getElementById('headerText'),
+  "h2Change": document.getElementById('header-text'),
   "imgChange": document.getElementById('prisoner'),
 }
 
@@ -37,8 +37,16 @@ function start() {
   } else {
     pages.startPage.style.display = 'none'
   }
-  chooseWayOut();
+  var person = prompt("Skriv in ditt namn:");
+
+if (person != null) {
+  document.getElementById("header-text").innerHTML =
+  "Välkommen " + person + ", här börjar vägen ut till friheten. Du befinner dig i din cell och får nu välja hur du ska rymma.";
 }
+chooseWayOut();
+}
+
+
 
 /** Shows second page */
 function chooseWayOut() {
