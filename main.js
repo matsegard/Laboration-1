@@ -37,7 +37,8 @@ function start() {
   } else {
     pages.startPage.style.display = 'none'
   }
-  var person = prompt("Skriv in ditt namn:");
+
+  let person = prompt("Skriv in ditt namn:");
 
 if (person != null) {
   document.getElementById("header-text").innerHTML =
